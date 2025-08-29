@@ -1,11 +1,18 @@
 const FloatingWhatsAppButton = () => {
+  const handleClick = () => {
+    try {
+      window.gtag && window.gtag('event', 'cta_whatsapp_click', { placement: 'floating_button' });
+    } catch (_) {}
+  };
+
   return (
     <a
-      href="https://wa.me/5511983437846"
+      href="https://wa.me/5511983437846?text=Ol%C3%A1%20Vitor%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o&utm_source=site&utm_medium=cta&utm_campaign=whatsapp_floating"
       target="_blank"
       rel="noopener noreferrer"
       className="fixed bottom-4 right-4 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg z-50"
-      aria-label="Contato via WhatsApp"
+      aria-label="Abrir conversa no WhatsApp com Vitor Vaz"
+      onClick={handleClick}
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"

@@ -11,15 +11,15 @@ const Blog = () => {
       <p className="mb-8 text-gray-700">Leia artigos escritos por Vitor Vaz sobre prevenção de lesões, reabilitação de joelho, tratamento de dor crônica e muito mais. Conteúdo atualizado regularmente para ajudá-lo(a) em todas as fases da recuperação.</p>
       <div className="space-y-6">
         <article className="bg-white p-6 rounded-lg shadow-md">
-          <h2 className="text-2xl font-semibold mb-2"><Link href="#">Prevenção de lesões de LCA: dicas para atletas e praticantes de esportes</Link></h2>
+          <h2 className="text-2xl font-semibold mb-2"><Link href="/blog/prevencao-lesao-lca">Prevenção de lesões de LCA: dicas para atletas e praticantes de esportes</Link></h2>
           <p className="text-gray-700">Descubra estratégias para fortalecer os músculos do joelho, melhorar a estabilidade e reduzir o risco de rompimento do ligamento cruzado anterior.</p>
         </article>
         <article className="bg-white p-6 rounded-lg shadow-md">
-          <h2 className="text-2xl font-semibold mb-2"><Link href="#">Como lidar com dor crônica: abordagem interdisciplinar</Link></h2>
+          <h2 className="text-2xl font-semibold mb-2"><Link href="/blog/como-lidar-com-dor-cronica">Como lidar com dor crônica: abordagem interdisciplinar</Link></h2>
           <p className="text-gray-700">Entenda a importância da fisioterapia, atividade física e educação em saúde no manejo da dor crônica e como retomar suas atividades diárias.</p>
         </article>
         <article className="bg-white p-6 rounded-lg shadow-md">
-          <h2 className="text-2xl font-semibold mb-2"><Link href="#">Reabilitação pós-operatória de cirurgia de joelho</Link></h2>
+          <h2 className="text-2xl font-semibold mb-2"><Link href="/blog/reabilitacao-pos-operatoria-joelho">Reabilitação pós-operatória de cirurgia de joelho</Link></h2>
           <p className="text-gray-700">Saiba como é o processo de recuperação após cirurgias de menisco e ligamento, com foco na progressão gradual e no retorno seguro às atividades.</p>
         </article>
       </div>

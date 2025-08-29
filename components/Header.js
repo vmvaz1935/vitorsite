@@ -12,13 +12,16 @@ const Header = () => {
           <span className="text-2xl font-bold text-primary">Vitor&nbsp;Vaz</span>
         </Link>
         <button
-          className="sm:hidden text-primary focus:outline-none"
+          className="sm:hidden text-primary focus:outline-none focus:ring-2 focus:ring-primary rounded"
           onClick={toggleMenu}
-          aria-label="Toggle Menu"
+          aria-label="Abrir menu de navegação"
+          aria-expanded={isOpen}
+          aria-controls="menu-principal"
         >
           ☰
         </button>
         <nav
+          id="menu-principal"
           className={`${isOpen ? 'block' : 'hidden'} sm:flex space-y-2 sm:space-y-0 sm:space-x-6 text-gray-700 font-medium`}
         >
           <Link href="/" className="hover:text-primary">Início</Link>

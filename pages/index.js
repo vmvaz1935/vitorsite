@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import Layout from '../components/Layout';
+import Head from 'next/head';
 
 export default function Home() {
   return (
@@ -8,6 +9,28 @@ export default function Home() {
       title="Fisioterapia em São Paulo – Especialista em Joelho e Dor Crônica | Vitor Vaz"
       description="Recupere-se com o fisioterapeuta Vitor Vaz, especialista em lesão de ligamento cruzado anterior (LCA), dor crônica e reabilitação de joelho em São Paulo. Agende sua avaliação agora."
     >
+      <Head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'LocalBusiness',
+              name: 'Vitor Vaz – Fisioterapia',
+              url: 'https://{site_domain}',
+              address: {
+                '@type': 'PostalAddress',
+                addressLocality: 'São Paulo',
+                addressRegion: 'SP',
+                addressCountry: 'BR',
+              },
+              image: ['/images/vitor1.jpg'],
+              sameAs: ['https://www.doctoralia.com.br/vitor-vaz/fisioterapeuta/sao-paulo'],
+              priceRange: '$$'
+            }),
+          }}
+        />
+      </Head>
       {/* Hero Section */}
       <section className="bg-accent py-16 px-6 rounded-xl flex flex-col-reverse lg:flex-row items-center gap-8">
         <div className="flex-1">

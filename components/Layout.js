@@ -6,6 +6,7 @@ import FloatingWhatsAppButton from './FloatingWhatsAppButton';
 const Layout = ({ children, title, description }) => {
   return (
     <>
+      <a href="#conteudo" className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 bg-white text-primary px-3 py-2 rounded shadow">Pular para o conteúdo</a>
       <Head>
         {title && <title>{title}</title>}
         {description && <meta name="description" content={description} />}
@@ -15,7 +16,7 @@ const Layout = ({ children, title, description }) => {
         <meta property="og:type" content="website" />
       </Head>
       <Header />
-      <main className="max-w-7xl mx-auto px-4 py-8">{children}</main>
+      <main id="conteudo" className="max-w-7xl mx-auto px-4 py-8">{children}</main>
       <Footer />
       <FloatingWhatsAppButton />
     </>

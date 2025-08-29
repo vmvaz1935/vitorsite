@@ -2,6 +2,8 @@ import '../styles/globals.css';
 import Head from 'next/head';
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
+import { DefaultSeo } from 'next-seo';
+import { SEO } from '../next-seo.config';
 
 // Google Analytics tracking - optional: replace with your own measurement ID.
 const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_ID || '';
@@ -24,6 +26,7 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <>
+      <DefaultSeo {...SEO} />
       <Head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />

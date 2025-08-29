@@ -2,22 +2,26 @@ import { useState } from 'react';
 import Layout from '../components/Layout';
 
 const Contato = () => {
-  const [form, setForm] = useState({ name: '', email: '', message: '' });
+  const [form, setForm] = useState({ name: '', email: '', message: '', consent: false });
   const [status, setStatus] = useState('');
 
   const handleChange = (e) => {
-    const { name, value } = e.target;
-    setForm({ ...form, [name]: value });
+    const { name, value, type, checked } = e.target;
+    setForm({ ...form, [name]: type === 'checkbox' ? checked : value });
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus('Enviando...');
+    if (!form.consent) {
+      setStatus('É necessário consentir com a Política de Privacidade.');
+      return;
+    }
     try {
       const res = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(form),
+        body: JSON.stringify({ name: form.name, email: form.email, message: form.message }),
       });
       if (res.ok) {
         setStatus('Mensagem enviada com sucesso!');
@@ -73,6 +77,20 @@ const Contato = () => {
               onChange={handleChange}
               className="w-full border border-gray-300 px-3 py-2 rounded-md"
             ></textarea>
+          </div>
+          <div className="flex items-start gap-2">
+            <input
+              type="checkbox"
+              id="consent"
+              name="consent"
+              checked={form.consent}
+              onChange={handleChange}
+              required
+              className="mt-1"
+            />
+            <label htmlFor="consent" className="text-sm text-gray-700">
+              Li e concordo com a <a href="/politica-de-privacidade" className="text-primary underline">Política de Privacidade</a> e os <a href="/termos-de-uso" className="text-primary underline">Termos de Uso</a>.
+            </label>
           </div>
           <button type="submit" className="bg-primary text-white px-6 py-3 rounded-md hover:bg-secondary">
             Enviar mensagem
