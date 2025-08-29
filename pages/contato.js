@@ -85,8 +85,8 @@ const Contato = () => {
           <p>Email: <a href="mailto:contato@vitorvaz.com" className="text-primary">contato@vitorvaz.com</a></p>
           <p>Endereços:</p>
           <ul className="list-disc list-inside text-gray-700">
-            <li>Rua Haddock Lobo, 1421 - Loja 08 - Mezanino, Cerqueira César, São Paulo【811834257920451†L64-L68】</li>
-            <li>Rua Doutor Amâncio de Carvalho 182, Vila Mariana, São Paulo【811834257920451†L75-L76】</li>
+            <li>Rua Haddock Lobo, 1421 - Loja 08 - Mezanino, Cerqueira César, São Paulo</li>
+            <li>Rua Doutor Amâncio de Carvalho 182, Vila Mariana, São Paulo</li>
           </ul>
         </div>
       </div>

@@ -25,8 +25,8 @@ const Servicos = () => {
             <p className="text-gray-700 mb-2">No consultório da <strong>Clínica Pace</strong>, em ambientes modernos e equipados, você receberá avaliação completa, diagnóstico funcional e tratamento personalizado para lesões de joelho, LCA, dores musculoesqueléticas e reabilitação pós-operatória.</p>
             <p className="text-gray-700">Endereços:</p>
             <ul className="list-disc list-inside text-gray-700 mb-4">
-              <li>Rua Haddock Lobo, 1421 - Loja 08 - Mezanino, Cerqueira César, São Paulo【811834257920451†L64-L68】</li>
-              <li>Rua Doutor Amâncio de Carvalho 182, Vila Mariana, São Paulo【811834257920451†L75-L76】</li>
+              <li>Rua Haddock Lobo, 1421 - Loja 08 - Mezanino, Cerqueira César, São Paulo</li>
+              <li>Rua Doutor Amâncio de Carvalho 182, Vila Mariana, São Paulo</li>
             </ul>
             <p className="text-gray-700 mb-4">Os agendamentos são feitos individualmente, de acordo com sua disponibilidade.</p>
             <a href="https://wa.me/5511983437846" target="_blank" rel="noopener noreferrer" className="bg-primary text-white px-5 py-3 rounded-md hover:bg-secondary">Agendar presencial</a>

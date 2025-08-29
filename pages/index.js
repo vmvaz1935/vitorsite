@@ -60,15 +60,15 @@ export default function Home() {
         <div className="space-y-6">
           <blockquote className="bg-white p-6 rounded-lg shadow-md">
             <p className="italic text-gray-800 mb-2">“Vitor é muito mais do que um fisioterapeuta! Ele se torna parceiro de jornada com disponibilidade e comunicação super-motivacional. Altíssima competência e flexibilidade.”</p>
-            <cite className="text-gray-600">— Opinião de paciente (29 de maio de 2025)【811834257920451†L331-L335】</cite>
+            <cite className="text-gray-600">— Opinião de paciente (29 de maio de 2025)</cite>
           </blockquote>
           <blockquote className="bg-white p-6 rounded-lg shadow-md">
             <p className="italic text-gray-800 mb-2">“O Vitor é atencioso, atento e cuidadoso. Chegava com dor e ele sempre foi atento às minhas queixas.”</p>
-            <cite className="text-gray-600">— Sandra, 15 de abril de 2025【811834257920451†L380-L383】</cite>
+            <cite className="text-gray-600">— Sandra, 15 de abril de 2025</cite>
           </blockquote>
           <blockquote className="bg-white p-6 rounded-lg shadow-md">
             <p className="italic text-gray-800 mb-2">“Foi fundamental para minha melhora, atencioso e sabia muito do que estava falando.”</p>
-            <cite className="text-gray-600">— Luka Ferreira, 25 de fevereiro de 2025【811834257920451†L427-L433】</cite>
+            <cite className="text-gray-600">— Luka Ferreira, 25 de fevereiro de 2025</cite>
           </blockquote>
         </div>
       </section>
@@ -86,7 +86,7 @@ export default function Home() {
         </div>
         <div className="flex-1">
           <h2 className="text-3xl font-semibold text-primary mb-4">Sobre o Fisioterapeuta</h2>
-          <p className="text-gray-700 mb-4">Formado pela Universidade Federal de São Paulo e doutor em Saúde Baseada em Evidências, Vitor possui especialização em fisioterapia esportiva e ampla experiência em reabilitação de lesões de joelho e dor crônica【811834257920451†L88-L107】.</p>
+          <p className="text-gray-700 mb-4">Formado pela Universidade Federal de São Paulo e doutor em Saúde Baseada em Evidências, Vitor possui especialização em fisioterapia esportiva e ampla experiência em reabilitação de lesões de joelho e dor crônica.</p>
           <Link href="/sobre" className="text-primary hover:underline">Conheça mais sobre Vitor →</Link>
         </div>
       </section>
