@@ -19,9 +19,7 @@ const Header = () => {
           ☰
         </button>
         <nav
-          className={`$${'{'}` +
-            `(isOpen ? 'block' : 'hidden')} sm:flex space-y-2 sm:space-y-0 sm:space-x-6 text-gray-700 font-medium` +
-            `${'}'}`
+          className={`${isOpen ? 'block' : 'hidden'} sm:flex space-y-2 sm:space-y-0 sm:space-x-6 text-gray-700 font-medium`}
         >
           <Link href="/" className="hover:text-primary">Início</Link>
           <Link href="/servicos" className="hover:text-primary">Serviços</Link>
