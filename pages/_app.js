@@ -3,7 +3,7 @@ import Head from 'next/head';
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
 import { DefaultSeo } from 'next-seo';
-import { SEO } from '../next-seo.config';
+import SEO from '../next-seo.config';
 
 // Google Analytics tracking - optional: replace with your own measurement ID.
 const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_ID || '';
